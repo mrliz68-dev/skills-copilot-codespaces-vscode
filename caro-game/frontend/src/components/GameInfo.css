@@ -1,0 +1,90 @@
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.player-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.player.active {
+  background: #e3f2fd;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+}
+
+.symbol {
+  font-size: 1.8em;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.symbol.x {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.symbol.o {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.name {
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+  word-break: break-word;
+  max-width: 100px;
+}
+
+.vs {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.turn-indicator {
+  text-align: center;
+  padding: 10px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 8px;
+  font-size: 0.95em;
+}
+
+@media (max-width: 400px) {
+  .player-info {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .symbol {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4em;
+  }
+
+  .name {
+    font-size: 0.8em;
+  }
+}
